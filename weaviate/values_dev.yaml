@@ -107,10 +107,6 @@ containerSecurityContext: {}
   # privileged: false
   # readOnlyRootFilesystem: true
 
-# Add a service account to the Weaviate pods if you need Weaviate to have permissions to
-# access kubernetes resources or cloud provider resources. For example for it to have
-# access to a backup up bucket, or if you want to restrict Weaviate pod in any way.
-# By default, use the default ServiceAccount
 serviceAccountName:
 
 # Kubernetes Cluster domain name, used for resolving intra-cluster requests, i.e
