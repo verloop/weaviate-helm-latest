@@ -2024,35 +2024,6 @@ extraVolumes:
 
 nodeSelector:
 
-tolerations:
-  - key: "pool"
-    operator: "Equal"
-    value: "machine-learning"
-    effect: "NoExecute"
-  
-hostAliases:
-
-affinity:
-  nodeAffinity:
-    requiredDuringSchedulingIgnoredDuringExecution:
-      nodeSelectorTerms:
-        - matchExpressions:
-            - key: cloud.google.com/gke-nodepool
-              operator: In
-              values:
-                - highcompute-ml-1
-  podAntiAffinity:
-    preferredDuringSchedulingIgnoredDuringExecution:
-      - weight: 1
-        podAffinityTerm:
-          topologyKey: "kubernetes.io/hostname"
-          labelSelector:
-            matchExpressions:
-              - key: "app"
-                operator: In
-                values:
-                  - weaviate1-29
-
 ## Optionally specify priorityClass name for the pod
 ## ref: https://kubernetes.io/docs/concepts/scheduling-eviction/pod-priority-preemption/#pod-priority
 ##
