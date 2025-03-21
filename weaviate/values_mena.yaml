@@ -2025,10 +2025,11 @@ extraVolumes:
 nodeSelector:
 
 tolerations:
-   - key: pool
-   operator: Equal
-   value: machine-learning
-   effect: NoExecute
+  operator: "Equal"
+  key: "pool"
+  value: machine-learning
+  effect: NoExecute
+  
 hostAliases:
 
 affinity:
