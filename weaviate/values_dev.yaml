@@ -279,6 +279,7 @@ env:
   ASYNC_INDEXING: true
   CLUSTER_GOSSIP_BIND_PORT: 7000
   CLUSTER_DATA_BIND_PORT: 7001
+  LOG_LEVEL: fatal
 
   # Set RAFT cluster expected number of voter nodes at bootstrap.
   # By default helm automatically sets this value based on the cluster size.
