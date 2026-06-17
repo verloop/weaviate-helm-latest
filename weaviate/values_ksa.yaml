@@ -2035,10 +2035,10 @@ affinity:
     requiredDuringSchedulingIgnoredDuringExecution:
       nodeSelectorTerms:
         - matchExpressions:
-            - key: cloud.google.com/gke-nodepool
+            - key: node
               operator: In
               values:
-                - highcompute-ml-1
+                - highcompute-ml
   podAntiAffinity:
     preferredDuringSchedulingIgnoredDuringExecution:
       - weight: 1
