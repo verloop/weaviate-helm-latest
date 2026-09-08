@@ -7,7 +7,7 @@ image:
   # Note: We strongly recommend you overwrite this value in your own values.yaml.
   # Otherwise a mere upgrade of the chart could lead to an unexpected upgrade
   # of weaviate. 
-  tag: 1.29.0
+  tag: 1.29.3
   repo: semitechnologies/weaviate
   # Image pull policy: https://kubernetes.io/docs/concepts/containers/images/#image-pull-policy
   pullPolicy: IfNotPresent
